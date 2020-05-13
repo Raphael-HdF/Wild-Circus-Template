@@ -2,33 +2,32 @@
 
 /* Ecris ici ton code CSS */
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     line-height: 1.4rem;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
     overflow-wrap: break-word;
-    /*hyphens: auto;*/
 }
 
-h1{ 
+h1 {
     font-family: 'Ewert', cursive;
     font-weight: 300;
     margin: 0;
 }
 
-h2{
+h2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 1.8rem;
 }
 
-header{
+header {
     position: fixed;
     background-color: black;
-    color:white;
+    color: white;
     padding: 30px;
     width: 100%;
 
@@ -36,108 +35,190 @@ header{
 }
 
 .section-image {
-    background-image: linear-gradient(to left, #000000 0%, #00000088 20%,#00000000 45%, #00000088 70%, #000000 100%), 
-    url("https://images.unsplash.com/photo-1544926323-8463f67ecb5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80");
-    height: 600px;
+    background-image: linear-gradient(to left, #000000 0%, #00000088 20%, #00000000 45%, #00000088 70%, #000000 100%),
+        url("https://images.unsplash.com/photo-1544926323-8463f67ecb5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80");
+    height: 500px;
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 35%;
 }
 
-nav li{
+nav li {
     display: inline;
     list-style: none;
     text-align: center;
     padding: 15px 10px 0;
 }
 
-nav a{
+nav a {
     display: inline;
     text-decoration: none;
     color: inherit;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
     font-weight: 600;
     /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
-nav{
-position: absolute;
-right: 30px;
-top: 15px;
+nav {
+    position: absolute;
+    right: 30px;
+    top: 15px;
 }
 
-.type-performance{
-    width: 33%;
+.type-performance {
+    display: flex;
     list-style: none;
-    padding: 0 10px;
+    -webkit-padding-start: 0;
+    padding-inline-start: 0;
+    /* flex-wrap: wrap; */
 }
 
-.type-performance h3{
+.type-performance h3 {
     text-align: center;
     font-family: 'Balsamiq Sans', cursive;
     font-size: 1.5rem;
+    color: #BF0436;
 }
 
-hr, section{
+.type-performance li {
+    padding: 0 10px;
+}
+
+hr,
+section {
     clear: both;
 }
 
-hr{
+hr {
     margin: 0;
 }
 
-section{
-    padding: 15px 100px;
+section {
+    padding: 30px 100px;
     overflow: hidden;
 }
 
-footer{
+footer {
     text-align: center;
     font-style: italic;
     font-size: 0.8rem;
 }
 
-.section-performances{
+.section-performances {
     padding-top: 100px;
 }
 
-.section-about-us, .section-contact {
+.image-history{
+    padding: 0 40px;
+    float: left ;
+    width: 420px;
+    height: auto;
+}
+.image-prices{
+    float: right;
+    padding: 0 20px;
+    width: 420px;
+    height: auto;
+}
+
+.section-about-us,
+.section-contact {
     background-color: whitesmoke;
 }
 
 
+
+
 table.prices-table {
-    width: 100%;
+    margin: 100px 0;
     text-align: center;
     border-collapse: collapse;
-  }
-  table.prices-table td, table.prices-table th {
-    border: 1px solid #AAAAAA;
+}
 
+table.prices-table td,
+table.prices-table th {
+    border: 1px solid #AAAAAA;
+    width: 20%;
     padding: 5px 2px;
-  }
-  table.prices-table tr:nth-child(even) {
+}
+
+table.prices-table tr:nth-child(even) {
     background: #DDDDDD;
-  }
-  table.prices-table thead {
-    background: #686868;
-    background: -moz-linear-gradient(top, #8e8e8e 0%, #777777 66%, #686868 100%);
-    background: -webkit-linear-gradient(top, #8e8e8e 0%, #777777 66%, #686868 100%);
+}
+
+table.prices-table thead {
     background: linear-gradient(to bottom, #8e8e8e 0%, #777777 66%, #686868 100%);
-  }
-  table.prices-table thead th {
+}
+
+table.prices-table thead th {
     font-size: 15px;
     font-weight: bold;
     color: #FFFFFF;
     text-align: center;
     border-radius: 10px 10px 0 0;
     border: #FFF;
-  }
-  
-  table.prices-table .cellule-vide{
+}
+
+table.prices-table .cellule-vide {
     background: #FFF;
     border: none;
-  }
+}
+
+
+
+.formulaire-contact, .formulaire-part3 {
+    margin: 0 auto;
+    width: 1000px;
+    align-items: flex-start;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.formulaire-part3{
+    flex-direction: column;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.formulaire-contact input {
+    /* width: 460px; */
+}
+
+.formulaire-contact input[type=checkbox] {
+    width: auto;
+}
+
+.myButton {
+    align-items: center;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 3px 4px 0px 0px #899599;
+    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    background-color: #ededed;
+    border-radius: 15px;
+    border: 1px solid #d4baba;
+    display: inline-block;
+    cursor: pointer;
+    color: #424242;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 7px 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #e1e2ed;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    background-color: #bab1ba;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
