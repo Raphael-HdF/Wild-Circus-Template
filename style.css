@@ -59,7 +59,6 @@ nav a {
 nav a:hover {
     text-decoration: underline;
     font-weight: 600;
-    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 nav {
@@ -73,7 +72,6 @@ nav {
     list-style: none;
     -webkit-padding-start: 0;
     padding-inline-start: 0;
-    /* flex-wrap: wrap; */
 }
 
 .type-performance h3 {
@@ -176,17 +174,12 @@ table.prices-table .cellule-vide {
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
 }
 
 .formulaire-part3{
     flex-direction: column;
     width: 500px;
     margin-top: 20px;
-}
-
-.formulaire-contact input {
-    /* width: 460px; */
 }
 
 .formulaire-contact input[type=checkbox] {
